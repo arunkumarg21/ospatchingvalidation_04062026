@@ -1,0 +1,35 @@
+Hi Network Team,
+
+We are planning to onboard on-premises Windows/SQL Servers into Azure Arc for centralized server inventory, monitoring, and management.
+
+Please review and approve outbound HTTPS (TCP 443) connectivity from the target servers to the following Microsoft Azure endpoints:
+
+Azure Arc:
+
+management.azure.com
+login.microsoftonline.com
+*.his.arc.azure.com
+*.guestconfiguration.azure.com
+
+Azure Monitor / Log Analytics:
+
+*.ods.opinsights.azure.com
+*.monitor.azure.com
+
+Azure Automation / Update Management:
+
+*.agentsvc.azure-automation.net
+*.azure-automation.net
+
+Agent Installation:
+
+download.microsoft.com
+
+Requirements:
+
+Protocol: HTTPS
+Port: TCP 443
+Direction: Outbound only
+No inbound firewall rules are required
+
+Please confirm whether these endpoints are already accessible from our production data centers or if firewall changes are required

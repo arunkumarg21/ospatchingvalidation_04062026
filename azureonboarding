@@ -1,0 +1,30 @@
+Request:
+Please allow outbound HTTPS (TCP 443) connectivity from target servers to the following Azure services:
+
+Core Azure Arc:
+
+management.azure.com
+login.microsoftonline.com
+gbl.his.arc.azure.com
+*.his.arc.azure.com
+
+Azure Monitor / Log Analytics:
+
+*.ods.opinsights.azure.com
+*.monitor.azure.com
+
+Guest Configuration / Arc Extensions:
+
+*.guestconfiguration.azure.com
+
+Azure Automation / Update Manager (future use):
+
+*.agentsvc.azure-automation.net
+*.azure-automation.net
+
+Requirements:
+
+Outbound only
+TCP Port 443
+No inbound firewall rules required
+Applicable for production servers participating in Azure Arc onboarding
